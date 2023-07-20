@@ -1,0 +1,248 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #492727;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* all similar content styling codes */
+section{
+    padding: 100px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.about, .services, .skills, .teams, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    background-color: #111;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background:rgb(243, 21, 14);
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: rgb(243, 21, 14);
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: rgb(243, 21, 14);
+}
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+button{
+    width: 90px;
+    position: relative;
+    left: 20%;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background: rgb(243, 21, 14);
+
+}
+.home{
+    background-image: url(images/do\ it\ right.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   filter: brightness(80%);
+   height: 800px;
+}
+.word{
+    font-size: 2em;
+    font-weight: bold;
+    position: relative;
+    top: 180px;
+    left: 20%;
+    filter: brightness(100%);
+    color: rgb(251, 251, 246)
+}
+.logo1{
+   padding-top: 100px; 
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #111;
+    color: #fff;
+    height: 400px;
+    position: relative;
+    top: 100px;
+}
+.fot{
+    display: grid;
+    color: #ffffff;
+}
+
+
+
+@media (max-width: 767px) {
+    .navbar .max-width {
+        padding: 0 20px;
+    }
+
+    /* .navbar .logo a {
+        font-size: 28px;
+    } */
+
+    .navbar .menu li a {
+        font-size: 16px;
+        margin-left: 15px;
+    }
+
+    button {
+        width: 80px;
+        font-size: 16px;
+    }
+
+    .home {
+        height: 600px;
+    }
+
+    .word {
+        top: 150px;
+        left: 10%;
+        font-size: 1.5em;
+    }
+
+    .footer {
+        top: 50px;
+        height: 300px;
+    }
+}
+
+/* For screens between 768px and 1023px (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar .logo a {
+        font-size: 30px;
+    }
+
+    .navbar .menu li a {
+        font-size: 17px;
+        margin-left: 20px;
+    }
+
+    button {
+        width: 85px;
+        font-size: 17px;
+    }
+
+    .home {
+        height: 700px;
+    }
+
+    .word {
+        top: 160px;
+        left: 15%;
+        font-size: 1.8em;
+    }
+
+    .footer {
+        top: 80px;
+        height: 350px;
+    }
+}
+.video-container {
+    position: relative;
+    width: 100%;
+   top: 50px;
+   right: 3%;
+   border: solid black;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .video-container video {
+    width: 100%;
+    height: auto;
+  }
+  .whywe{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #13093f;
+    color: #fff;
+    position: relative;
+    top: 100px;
+    height: 400px;
+  }
+  .word2 {
+    position: relative;
+    top: 100px;
+    font-size: 1.5em;
+}
+.abt{
+    display: flex;
+    justify-content: space-evenly;
+    color: #2e2a2a;
+    position: relative;
+    top: 150px;
+   
+}
